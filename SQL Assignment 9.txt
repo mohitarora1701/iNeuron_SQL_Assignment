@@ -1,0 +1,6 @@
+Q-1. Write an SQL query to show the top n (say 10) records of a table.
+Ans-1. SELECT TOP 10 * FROM Worker
+       SELECT * FROM Worker limit 10 
+
+Q-2. Write an SQL query to determine the nth (say n=5) highest salary from a table.
+Ans-2.  Select Salary from table_name order by Salary DESC limit 5,1;

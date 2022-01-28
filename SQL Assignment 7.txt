@@ -1,0 +1,6 @@
+Q-1. Write an SQL query to show only odd rows from a table.
+Ans-1. Select * from Worker where (RowID % 2) = 1
+
+Q-2. Write an SQL query to clone a new table from another table.
+Ans-2 CREATE TABLE new_table LIKE original_table;
+      INSERT INTO new_table SELECT * FROM original_table;

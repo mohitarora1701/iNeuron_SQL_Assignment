@@ -1,0 +1,8 @@
+Q-1. Write an SQL query to print the first three characters of FIRST_NAME from Worker table.
+Ans-1. SELECT SUBSTRING(FIRST_NAME,1,3) FROM Worker
+
+Q-2. Write an SQL query to find the position of the alphabet (‘a’) in the first name column ‘Amitabh’ from Worker table.
+Ans-2. SELECT CHARINDEX('a', 'Amitabh') AS Finded;
+
+Q-3. Write an SQL query to print the name of employees having the highest salary in each department.
+Ans-3. SELECT name, MAX(salary) from Worker group by department

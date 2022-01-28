@@ -1,0 +1,16 @@
+Q-1. Write an SQL query to fetch intersecting records of two tables.
+Ans-1.  SELECT ID, NAME, Amount, Date
+        FROM TABLE1
+        LEFT JOIN TABLE2
+        ON TABLE1.ID = TABLE2.Customer_id
+        INTERSECT
+        SELECT  ID, NAME, Amount, Date
+        FROM TABLE1
+        RIGHT JOIN Orders
+        ON TABLE1.ID = TABLE2.Customer_id;
+
+Q-2. Write an SQL query to show records from one table that another table does not have.
+Ans-2. SELECT t1.name
+       FROM table1 t1
+       LEFT JOIN table2 t2 ON t2.name = t1.name
+       WHERE t2.name IS NULL    

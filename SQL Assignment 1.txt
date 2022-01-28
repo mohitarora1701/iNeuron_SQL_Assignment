@@ -1,0 +1,9 @@
+Q-1. Write an SQL query to fetch “FIRST_NAME” from Worker table using the alias name as "WORKER_NAME".
+Ans-1. select FIRST_NAME as WORKER_NAME from Worker
+
+Q-2. Write an SQL query to fetch unique values of DEPARTMENT from Worker table.
+Ans-2. select DEPARTMENT from Worker group by DEPARTMENT
+
+Q-3. Write an SQL query to show the last 5 record from a table.
+Ans-3 SELECT TOP 5 * FROM Table ORDER BY ID DESC
+      SELECT * FROM Table ORDER BY ID DESC LIMIT 5
